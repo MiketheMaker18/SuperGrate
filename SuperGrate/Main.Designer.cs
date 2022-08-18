@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.LogBox = new System.Windows.Forms.RichTextBox();
             this.logTable = new System.Windows.Forms.TableLayoutPanel();
+            this.pbMain = new SuperGrate.Controls.SGProgressBar();
             this.spltContainer = new System.Windows.Forms.SplitContainer();
             this.tblMainLayout = new System.Windows.Forms.TableLayoutPanel();
             this.sourCompTabl = new System.Windows.Forms.TableLayoutPanel();
@@ -84,7 +85,6 @@
             this.miConDelete = new System.Windows.Forms.MenuItem();
             this.miConSeperator = new System.Windows.Forms.MenuItem();
             this.miConProperties = new System.Windows.Forms.MenuItem();
-            this.pbMain = new SuperGrate.Controls.SGProgressBar();
             this.logTable.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.spltContainer)).BeginInit();
             this.spltContainer.Panel1.SuspendLayout();
@@ -132,6 +132,18 @@
             this.logTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
             this.logTable.Size = new System.Drawing.Size(348, 472);
             this.logTable.TabIndex = 100;
+            // 
+            // pbMain
+            // 
+            this.pbMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pbMain.ForeColor = System.Drawing.Color.Black;
+            this.pbMain.Location = new System.Drawing.Point(3, 446);
+            this.pbMain.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pbMain.MarqueeAnimationSpeed = 30;
+            this.pbMain.Name = "pbMain";
+            this.pbMain.Size = new System.Drawing.Size(342, 22);
+            this.pbMain.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+            this.pbMain.TabIndex = 100;
             // 
             // spltContainer
             // 
@@ -665,21 +677,8 @@
             this.miConProperties.Text = "Properties";
             this.miConProperties.Click += new System.EventHandler(this.OpenUserProperties_Event);
             // 
-            // pbMain
-            // 
-            this.pbMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pbMain.ForeColor = System.Drawing.Color.Black;
-            this.pbMain.Location = new System.Drawing.Point(3, 446);
-            this.pbMain.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.pbMain.MarqueeAnimationSpeed = 30;
-            this.pbMain.Name = "pbMain";
-            this.pbMain.Size = new System.Drawing.Size(342, 22);
-            this.pbMain.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
-            this.pbMain.TabIndex = 100;
-            // 
             // Main
             // 
-            this.ApplyImageInvert = false;
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(1034, 537);
             this.Controls.Add(this.spltContainer);
