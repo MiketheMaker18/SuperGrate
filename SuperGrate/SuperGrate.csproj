@@ -290,7 +290,7 @@
     </PreBuildEvent>
   </PropertyGroup>
   <PropertyGroup>
-    <PostBuildEvent>del $(TargetDir)\Microsoft.WindowsAPICodePack.Shell.xml
-del $(TargetDir)\Microsoft.WindowsAPICodePack.xml</PostBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
   </PropertyGroup>
 </Project>
