@@ -8,12 +8,13 @@ using System.Drawing;
 using System.IO;
 using System.Net;
 using System.Windows.Forms;
+using MetroFramework.Forms;
 
 namespace SuperGrate
 {
-    public partial class Main : Form
+    public partial class Main : MetroForm
     {
-        public static Form Form;
+        public static MetroForm Form;
         public static RichTextBox LoggerBox;
         public static ProgressBar Progress;
         public static string SourceComputer;
@@ -781,6 +782,11 @@ namespace SuperGrate
         private void LogBox_LinkClicked(object sender, LinkClickedEventArgs e)
         {
             Process.Start("OpenWith.exe", e.LinkText);
+        }
+
+        private void tblMainLayout_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
     /// <summary>
