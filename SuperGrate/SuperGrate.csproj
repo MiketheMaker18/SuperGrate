@@ -341,7 +341,8 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PreBuildEvent>rmdir -r $(TargetDir)</PreBuildEvent>
+    <PreBuildEvent>d:
+del /s/q "$(TargetDir)\*"</PreBuildEvent>
   </PropertyGroup>
   <PropertyGroup>
     <PostBuildEvent>
