@@ -42,6 +42,7 @@
             this.lblUserList = new System.Windows.Forms.Label();
             this.btnStartStop = new System.Windows.Forms.Button();
             this.tbleListUsersButtons = new System.Windows.Forms.TableLayoutPanel();
+            this.btnListSource = new System.Windows.Forms.Button();
             this.btnListStore = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.pnlLogoBorder = new System.Windows.Forms.Panel();
@@ -84,7 +85,6 @@
             this.miConDelete = new System.Windows.Forms.MenuItem();
             this.miConSeperator = new System.Windows.Forms.MenuItem();
             this.miConProperties = new System.Windows.Forms.MenuItem();
-            this.btnListSource = new System.Windows.Forms.Button();
             this.logTable.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.spltContainer)).BeginInit();
             this.spltContainer.Panel1.SuspendLayout();
@@ -111,7 +111,7 @@
             this.LogBox.Name = "LogBox";
             this.LogBox.ReadOnly = true;
             this.helpProvider.SetShowHelp(this.LogBox, true);
-            this.LogBox.Size = new System.Drawing.Size(294, 357);
+            this.LogBox.Size = new System.Drawing.Size(336, 482);
             this.LogBox.TabIndex = 100;
             this.LogBox.Text = "";
             this.LogBox.LinkClicked += new System.Windows.Forms.LinkClickedEventHandler(this.LogBox_LinkClicked);
@@ -130,18 +130,18 @@
             this.logTable.RowCount = 2;
             this.logTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.logTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.logTable.Size = new System.Drawing.Size(300, 395);
+            this.logTable.Size = new System.Drawing.Size(342, 520);
             this.logTable.TabIndex = 100;
             // 
             // pbMain
             // 
             this.pbMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pbMain.ForeColor = System.Drawing.Color.Black;
-            this.pbMain.Location = new System.Drawing.Point(3, 369);
+            this.pbMain.Location = new System.Drawing.Point(3, 494);
             this.pbMain.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pbMain.MarqueeAnimationSpeed = 30;
             this.pbMain.Name = "pbMain";
-            this.pbMain.Size = new System.Drawing.Size(294, 22);
+            this.pbMain.Size = new System.Drawing.Size(336, 22);
             this.pbMain.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
             this.pbMain.TabIndex = 100;
             // 
@@ -161,8 +161,8 @@
             // 
             this.spltContainer.Panel2.Controls.Add(this.logTable);
             this.spltContainer.Panel2MinSize = 300;
-            this.spltContainer.Size = new System.Drawing.Size(862, 395);
-            this.spltContainer.SplitterDistance = 558;
+            this.spltContainer.Size = new System.Drawing.Size(979, 520);
+            this.spltContainer.SplitterDistance = 633;
             this.spltContainer.TabIndex = 100;
             // 
             // tblMainLayout
@@ -190,7 +190,7 @@
             this.tblMainLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tblMainLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 110F));
             this.tblMainLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tblMainLayout.Size = new System.Drawing.Size(558, 395);
+            this.tblMainLayout.Size = new System.Drawing.Size(633, 520);
             this.tblMainLayout.TabIndex = 100;
             this.tblMainLayout.Paint += new System.Windows.Forms.PaintEventHandler(this.tblMainLayout_Paint);
             // 
@@ -207,7 +207,7 @@
             this.sourCompTabl.Name = "sourCompTabl";
             this.sourCompTabl.RowCount = 1;
             this.sourCompTabl.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.sourCompTabl.Size = new System.Drawing.Size(428, 30);
+            this.sourCompTabl.Size = new System.Drawing.Size(503, 30);
             this.sourCompTabl.TabIndex = 101;
             // 
             // tbSourceComputer
@@ -220,9 +220,8 @@
             this.tbSourceComputer.Margin = new System.Windows.Forms.Padding(3, 4, 6, 4);
             this.tbSourceComputer.Name = "tbSourceComputer";
             this.helpProvider.SetShowHelp(this.tbSourceComputer, true);
-            this.tbSourceComputer.Size = new System.Drawing.Size(394, 27);
+            this.tbSourceComputer.Size = new System.Drawing.Size(469, 27);
             this.tbSourceComputer.TabIndex = 101;
-            this.tbSourceComputer.Text = "Enter PC name here to list users";
             this.tbSourceComputer.TextChanged += new System.EventHandler(this.TbSourceComputer_TextChanged);
             this.tbSourceComputer.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TbSourceDestComputer_KeyDown);
             // 
@@ -231,7 +230,7 @@
             this.btnAFillSrc.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnAFillSrc.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.helpProvider.SetHelpString(this.btnAFillSrc, "This button will auto-fill the current computer\'s hostname.");
-            this.btnAFillSrc.Location = new System.Drawing.Point(403, 3);
+            this.btnAFillSrc.Location = new System.Drawing.Point(478, 3);
             this.btnAFillSrc.Margin = new System.Windows.Forms.Padding(0, 3, 2, 3);
             this.btnAFillSrc.Name = "btnAFillSrc";
             this.helpProvider.SetShowHelp(this.btnAFillSrc, true);
@@ -269,7 +268,7 @@
             this.lblUserList.Location = new System.Drawing.Point(3, 90);
             this.lblUserList.Name = "lblUserList";
             this.helpProvider.SetShowHelp(this.lblUserList, true);
-            this.lblUserList.Size = new System.Drawing.Size(124, 165);
+            this.lblUserList.Size = new System.Drawing.Size(124, 290);
             this.lblUserList.TabIndex = 100;
             this.lblUserList.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -281,11 +280,11 @@
             this.btnStartStop.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.helpProvider.SetHelpString(this.btnStartStop, "This button will start a migration, backup, or restoration and stop any other Sup" +
         "er Grate process.");
-            this.btnStartStop.Location = new System.Drawing.Point(3, 368);
+            this.btnStartStop.Location = new System.Drawing.Point(3, 493);
             this.btnStartStop.Margin = new System.Windows.Forms.Padding(3, 3, 2, 3);
             this.btnStartStop.Name = "btnStartStop";
             this.helpProvider.SetShowHelp(this.btnStartStop, true);
-            this.btnStartStop.Size = new System.Drawing.Size(553, 24);
+            this.btnStartStop.Size = new System.Drawing.Size(628, 24);
             this.btnStartStop.TabIndex = 100;
             this.btnStartStop.UseVisualStyleBackColor = true;
             this.btnStartStop.Click += new System.EventHandler(this.BtStartStop_Click);
@@ -305,8 +304,23 @@
             this.tbleListUsersButtons.Name = "tbleListUsersButtons";
             this.tbleListUsersButtons.RowCount = 1;
             this.tbleListUsersButtons.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tbleListUsersButtons.Size = new System.Drawing.Size(428, 30);
+            this.tbleListUsersButtons.Size = new System.Drawing.Size(503, 30);
             this.tbleListUsersButtons.TabIndex = 100;
+            // 
+            // btnListSource
+            // 
+            this.btnListSource.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnListSource.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.helpProvider.SetHelpString(this.btnListSource, "This button will retrieve the list of user profiles from the source computer.");
+            this.btnListSource.Location = new System.Drawing.Point(2, 3);
+            this.btnListSource.Margin = new System.Windows.Forms.Padding(2, 3, 3, 3);
+            this.btnListSource.Name = "btnListSource";
+            this.helpProvider.SetShowHelp(this.btnListSource, true);
+            this.btnListSource.Size = new System.Drawing.Size(162, 26);
+            this.btnListSource.TabIndex = 100;
+            this.btnListSource.Text = " List User Profiles";
+            this.btnListSource.UseVisualStyleBackColor = true;
+            this.btnListSource.Click += new System.EventHandler(this.BtnListSource_Click);
             // 
             // btnListStore
             // 
@@ -314,10 +328,10 @@
             this.btnListStore.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.helpProvider.SetHelpString(this.btnListStore, "This button will list the user profiles that have already been backed up to the s" +
         "tore.");
-            this.btnListStore.Location = new System.Drawing.Point(145, 3);
+            this.btnListStore.Location = new System.Drawing.Point(170, 3);
             this.btnListStore.Name = "btnListStore";
             this.helpProvider.SetShowHelp(this.btnListStore, true);
-            this.btnListStore.Size = new System.Drawing.Size(136, 26);
+            this.btnListStore.Size = new System.Drawing.Size(161, 26);
             this.btnListStore.TabIndex = 100;
             this.btnListStore.Text = " List Store";
             this.btnListStore.Click += new System.EventHandler(this.BtnListStore_Click);
@@ -329,11 +343,11 @@
             this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.helpProvider.SetHelpString(this.btnDelete, "This button will delete user profiles from either the source computer or the stor" +
         "e.");
-            this.btnDelete.Location = new System.Drawing.Point(287, 3);
+            this.btnDelete.Location = new System.Drawing.Point(337, 3);
             this.btnDelete.Margin = new System.Windows.Forms.Padding(3, 3, 2, 3);
             this.btnDelete.Name = "btnDelete";
             this.helpProvider.SetShowHelp(this.btnDelete, true);
-            this.btnDelete.Size = new System.Drawing.Size(139, 26);
+            this.btnDelete.Size = new System.Drawing.Size(164, 26);
             this.btnDelete.TabIndex = 100;
             this.btnDelete.Text = " Delete";
             this.btnDelete.Click += new System.EventHandler(this.BtnDelete_Click);
@@ -344,7 +358,7 @@
             this.pnlLogoBorder.Controls.Add(this.imgLoadLogo);
             this.pnlLogoBorder.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlLogoBorder.ForeColor = System.Drawing.Color.Cornsilk;
-            this.pnlLogoBorder.Location = new System.Drawing.Point(4, 255);
+            this.pnlLogoBorder.Location = new System.Drawing.Point(4, 380);
             this.pnlLogoBorder.Margin = new System.Windows.Forms.Padding(4, 0, 4, 4);
             this.pnlLogoBorder.Name = "pnlLogoBorder";
             this.pnlLogoBorder.Padding = new System.Windows.Forms.Padding(1);
@@ -381,7 +395,7 @@
             this.destCompTabl.Name = "destCompTabl";
             this.destCompTabl.RowCount = 1;
             this.destCompTabl.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.destCompTabl.Size = new System.Drawing.Size(428, 30);
+            this.destCompTabl.Size = new System.Drawing.Size(503, 30);
             this.destCompTabl.TabIndex = 102;
             // 
             // btnAFillDest
@@ -389,7 +403,7 @@
             this.btnAFillDest.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnAFillDest.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.helpProvider.SetHelpString(this.btnAFillDest, "This button will auto-fill the current computer\'s hostname.");
-            this.btnAFillDest.Location = new System.Drawing.Point(403, 3);
+            this.btnAFillDest.Location = new System.Drawing.Point(478, 3);
             this.btnAFillDest.Margin = new System.Windows.Forms.Padding(0, 3, 2, 3);
             this.btnAFillDest.Name = "btnAFillDest";
             this.helpProvider.SetShowHelp(this.btnAFillDest, true);
@@ -409,9 +423,8 @@
             this.tbDestinationComputer.Margin = new System.Windows.Forms.Padding(3, 4, 6, 4);
             this.tbDestinationComputer.Name = "tbDestinationComputer";
             this.helpProvider.SetShowHelp(this.tbDestinationComputer, true);
-            this.tbDestinationComputer.Size = new System.Drawing.Size(394, 27);
+            this.tbDestinationComputer.Size = new System.Drawing.Size(469, 27);
             this.tbDestinationComputer.TabIndex = 102;
-            this.tbDestinationComputer.Text = "Enter PC name here to restore data";
             this.tbDestinationComputer.TextChanged += new System.EventHandler(this.TbDestinationComputer_TextChanged);
             this.tbDestinationComputer.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TbSourceDestComputer_KeyDown);
             // 
@@ -425,7 +438,7 @@
             this.listUsers.Name = "listUsers";
             this.tblMainLayout.SetRowSpan(this.listUsers, 2);
             this.listUsers.ShowGroups = false;
-            this.listUsers.Size = new System.Drawing.Size(422, 269);
+            this.listUsers.Size = new System.Drawing.Size(497, 394);
             this.listUsers.TabIndex = 103;
             this.listUsers.UseCompatibleStateImageBehavior = false;
             this.listUsers.View = System.Windows.Forms.View.Details;
@@ -670,26 +683,11 @@
             this.miConProperties.Text = "Properties";
             this.miConProperties.Click += new System.EventHandler(this.OpenUserProperties_Event);
             // 
-            // btnListSource
-            // 
-            this.btnListSource.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnListSource.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.helpProvider.SetHelpString(this.btnListSource, "This button will retrieve the list of user profiles from the source computer.");
-            this.btnListSource.Location = new System.Drawing.Point(2, 3);
-            this.btnListSource.Margin = new System.Windows.Forms.Padding(2, 3, 3, 3);
-            this.btnListSource.Name = "btnListSource";
-            this.helpProvider.SetShowHelp(this.btnListSource, true);
-            this.btnListSource.Size = new System.Drawing.Size(137, 26);
-            this.btnListSource.TabIndex = 100;
-            this.btnListSource.Text = " List User Profiles";
-            this.btnListSource.UseVisualStyleBackColor = true;
-            this.btnListSource.Click += new System.EventHandler(this.BtnListSource_Click);
-            // 
             // Main
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BorderStyle = MetroFramework.Forms.MetroFormBorderStyle.FixedSingle;
-            this.ClientSize = new System.Drawing.Size(872, 460);
+            this.ClientSize = new System.Drawing.Size(989, 585);
             this.Controls.Add(this.spltContainer);
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.KeyPreview = true;
