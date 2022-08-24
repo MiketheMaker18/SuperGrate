@@ -55,7 +55,6 @@
             // 
             // btnRemove
             // 
-            this.btnRemove.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnRemove.Location = new System.Drawing.Point(153, 102);
             this.btnRemove.Name = "btnRemove";
             this.btnRemove.Size = new System.Drawing.Size(88, 21);
@@ -92,7 +91,6 @@
             // 
             // btnMoveUp
             // 
-            this.btnMoveUp.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnMoveUp.Location = new System.Drawing.Point(392, 27);
             this.btnMoveUp.Name = "btnMoveUp";
             this.btnMoveUp.Size = new System.Drawing.Size(118, 21);
@@ -103,7 +101,6 @@
             // 
             // btnMoveDown
             // 
-            this.btnMoveDown.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnMoveDown.Location = new System.Drawing.Point(392, 56);
             this.btnMoveDown.Name = "btnMoveDown";
             this.btnMoveDown.Size = new System.Drawing.Size(118, 21);
@@ -114,7 +111,6 @@
             // 
             // btnRestoreDefaults
             // 
-            this.btnRestoreDefaults.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnRestoreDefaults.Location = new System.Drawing.Point(392, 95);
             this.btnRestoreDefaults.Name = "btnRestoreDefaults";
             this.btnRestoreDefaults.Size = new System.Drawing.Size(118, 21);

@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.LogBox = new System.Windows.Forms.RichTextBox();
             this.logTable = new System.Windows.Forms.TableLayoutPanel();
+            this.pbMain = new SuperGrate.Controls.SGProgressBar();
             this.spltContainer = new System.Windows.Forms.SplitContainer();
             this.tblMainLayout = new System.Windows.Forms.TableLayoutPanel();
             this.sourCompTabl = new System.Windows.Forms.TableLayoutPanel();
@@ -84,7 +85,7 @@
             this.miConDelete = new System.Windows.Forms.MenuItem();
             this.miConSeperator = new System.Windows.Forms.MenuItem();
             this.miConProperties = new System.Windows.Forms.MenuItem();
-            this.pbMain = new SuperGrate.Controls.SGProgressBar();
+            this.metroStyleExtender1 = new MetroFramework.Components.MetroStyleExtender(this.components);
             this.logTable.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.spltContainer)).BeginInit();
             this.spltContainer.Panel1.SuspendLayout();
@@ -132,6 +133,18 @@
             this.logTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
             this.logTable.Size = new System.Drawing.Size(342, 468);
             this.logTable.TabIndex = 100;
+            // 
+            // pbMain
+            // 
+            this.pbMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pbMain.ForeColor = System.Drawing.Color.Black;
+            this.pbMain.Location = new System.Drawing.Point(3, 442);
+            this.pbMain.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pbMain.MarqueeAnimationSpeed = 30;
+            this.pbMain.Name = "pbMain";
+            this.pbMain.Size = new System.Drawing.Size(336, 22);
+            this.pbMain.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+            this.pbMain.TabIndex = 100;
             // 
             // spltContainer
             // 
@@ -216,7 +229,6 @@
             // btnAFillSrc
             // 
             this.btnAFillSrc.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnAFillSrc.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.helpProvider.SetHelpString(this.btnAFillSrc, "This button will auto-fill the current computer\'s hostname.");
             this.btnAFillSrc.Location = new System.Drawing.Point(478, 3);
             this.btnAFillSrc.Margin = new System.Windows.Forms.Padding(0, 3, 2, 3);
@@ -265,7 +277,6 @@
             this.tblMainLayout.SetColumnSpan(this.btnStartStop, 2);
             this.btnStartStop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnStartStop.Enabled = false;
-            this.btnStartStop.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.helpProvider.SetHelpString(this.btnStartStop, "This button will start a migration, backup, or restoration and stop any other Sup" +
         "er Grate process.");
             this.btnStartStop.Location = new System.Drawing.Point(3, 441);
@@ -298,7 +309,6 @@
             // btnListSource
             // 
             this.btnListSource.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnListSource.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.helpProvider.SetHelpString(this.btnListSource, "This button will retrieve the list of user profiles from the source computer.");
             this.btnListSource.Location = new System.Drawing.Point(2, 3);
             this.btnListSource.Margin = new System.Windows.Forms.Padding(2, 3, 3, 3);
@@ -307,13 +317,12 @@
             this.btnListSource.Size = new System.Drawing.Size(162, 26);
             this.btnListSource.TabIndex = 100;
             this.btnListSource.Text = " List User Profiles";
-            this.btnListSource.UseVisualStyleBackColor = true;
+            this.btnListSource.UseVisualStyleBackColor = false;
             this.btnListSource.Click += new System.EventHandler(this.BtnListSource_Click);
             // 
             // btnListStore
             // 
             this.btnListStore.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnListStore.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.helpProvider.SetHelpString(this.btnListStore, "This button will list the user profiles that have already been backed up to the s" +
         "tore.");
             this.btnListStore.Location = new System.Drawing.Point(170, 3);
@@ -328,7 +337,6 @@
             // 
             this.btnDelete.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnDelete.Enabled = false;
-            this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.helpProvider.SetHelpString(this.btnDelete, "This button will delete user profiles from either the source computer or the stor" +
         "e.");
             this.btnDelete.Location = new System.Drawing.Point(337, 3);
@@ -389,7 +397,6 @@
             // btnAFillDest
             // 
             this.btnAFillDest.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnAFillDest.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.helpProvider.SetHelpString(this.btnAFillDest, "This button will auto-fill the current computer\'s hostname.");
             this.btnAFillDest.Location = new System.Drawing.Point(478, 3);
             this.btnAFillDest.Margin = new System.Windows.Forms.Padding(0, 3, 2, 3);
@@ -671,18 +678,6 @@
             this.miConProperties.Text = "Properties";
             this.miConProperties.Click += new System.EventHandler(this.OpenUserProperties_Event);
             // 
-            // pbMain
-            // 
-            this.pbMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pbMain.ForeColor = System.Drawing.Color.Black;
-            this.pbMain.Location = new System.Drawing.Point(3, 442);
-            this.pbMain.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.pbMain.MarqueeAnimationSpeed = 30;
-            this.pbMain.Name = "pbMain";
-            this.pbMain.Size = new System.Drawing.Size(336, 22);
-            this.pbMain.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
-            this.pbMain.TabIndex = 100;
-            // 
             // Main
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -776,6 +771,7 @@
         private System.Windows.Forms.Panel pnlLogoBorder;
         private System.Windows.Forms.PictureBox imgLoadLogo;
         private System.Windows.Forms.Button btnListSource;
+        private MetroFramework.Components.MetroStyleExtender metroStyleExtender1;
     }
 }
 
