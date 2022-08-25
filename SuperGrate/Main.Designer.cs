@@ -213,6 +213,7 @@
             // 
             // tbSourceComputer
             // 
+            this.metroStyleExtender1.SetApplyMetroTheme(this.tbSourceComputer, true);
             this.tbSourceComputer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tbSourceComputer.ForeColor = System.Drawing.Color.OliveDrab;
             this.helpProvider.SetHelpString(this.tbSourceComputer, "Enter the source computer hostname. This is where the user profiles to be migrate" +
@@ -677,6 +678,10 @@
             this.miConProperties.Index = 4;
             this.miConProperties.Text = "Properties";
             this.miConProperties.Click += new System.EventHandler(this.OpenUserProperties_Event);
+            // 
+            // metroStyleExtender1
+            // 
+            this.metroStyleExtender1.Theme = MetroFramework.MetroThemeStyle.Light;
             // 
             // Main
             // 

@@ -41,6 +41,7 @@ namespace SuperGrate
         /// <param name="parameters">A list of parameters to override XML settings.</param>
         public Main(string[] parameters)
         {
+            
             MainParameters = parameters;
             InitializeComponent();
             Form = this;
