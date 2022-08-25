@@ -75,7 +75,6 @@
             // 
             // labelProductName
             // 
-            this.labelProductName.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.labelProductName.Location = new System.Drawing.Point(170, 10);
             this.labelProductName.Margin = new System.Windows.Forms.Padding(0, 10, 3, 0);
             this.labelProductName.MaximumSize = new System.Drawing.Size(131, 17);

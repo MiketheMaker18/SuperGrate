@@ -55,7 +55,6 @@ namespace SuperGrate.Controls
             // lblDestName
             // 
             this.lblDestName.AutoSize = true;
-            this.lblDestName.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.lblDestName.Location = new System.Drawing.Point(25, 77);
             this.lblDestName.Name = "lblDestName";
             this.lblDestName.Size = new System.Drawing.Size(128, 13);

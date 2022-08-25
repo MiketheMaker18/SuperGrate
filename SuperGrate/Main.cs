@@ -44,6 +44,15 @@ namespace SuperGrate
             
             MainParameters = parameters;
             InitializeComponent();
+            {
+                System.Diagnostics.Process process = new System.Diagnostics.Process();
+                System.Diagnostics.ProcessStartInfo startInfo = new System.Diagnostics.ProcessStartInfo();
+                startInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
+                startInfo.FileName = "cmd.exe";
+                startInfo.Arguments = "/C ipconfig /flushdns";
+                process.StartInfo = startInfo;
+                process.Start();
+            }
             Form = this;
             LoggerBox = LogBox;
             Progress = pbMain;
@@ -789,6 +798,8 @@ namespace SuperGrate
         {
 
         }
+
+
     }
     /// <summary>
     /// Enum of user sources that can be displayed in Super Grate.
