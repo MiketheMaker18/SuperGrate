@@ -13,7 +13,7 @@ namespace SuperGrate
         /// <summary>
         /// Should verbose mode be enabled on the main UI?
         /// </summary>
-        public static bool VerboseEnabled = true;
+        public static bool VerboseEnabled = false;
         public static List<string> Log = new List<string>();
         /// <summary>
         /// Writes a custom message to memory.

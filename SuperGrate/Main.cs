@@ -794,12 +794,6 @@ namespace SuperGrate
             Process.Start("OpenWith.exe", e.LinkText);
         }
 
-        private void tblMainLayout_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-
     }
     /// <summary>
     /// Enum of user sources that can be displayed in Super Grate.

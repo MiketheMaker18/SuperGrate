@@ -124,7 +124,8 @@ namespace SuperGrate
                     row.ContainsKey(ULColumnType.Size) ||
                     row.ContainsKey(ULColumnType.FirstCreated) ||
                     row.ContainsKey(ULColumnType.ProfilePath)
-                ) {
+                )
+                {
                     string profilePathWMI = UserObject.GetPropertyValue("LocalPath").ToString();
                     if (profilePathWMI == null)
                     {

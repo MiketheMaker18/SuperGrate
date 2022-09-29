@@ -194,7 +194,6 @@
             this.tblMainLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
             this.tblMainLayout.Size = new System.Drawing.Size(620, 387);
             this.tblMainLayout.TabIndex = 100;
-            this.tblMainLayout.Paint += new System.Windows.Forms.PaintEventHandler(this.tblMainLayout_Paint);
             // 
             // sourCompTabl
             // 
@@ -697,7 +696,7 @@
             this.metroLabel1.Size = new System.Drawing.Size(93, 17);
             this.metroLabel1.Style = MetroFramework.MetroColorStyle.Silver;
             this.metroLabel1.TabIndex = 101;
-            this.metroLabel1.Text = "|    version 1.1.8";
+            this.metroLabel1.Text = "|    version 1.1.9";
             this.metroLabel1.UseStyleColors = true;
             // 
             // Main
@@ -708,12 +707,14 @@
             this.Controls.Add(this.metroLabel1);
             this.Controls.Add(this.spltContainer);
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HelpButton = true;
             this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Menu = this.MainMenu;
             this.MinimumSize = new System.Drawing.Size(800, 320);
             this.Name = "Main";
             this.Padding = new System.Windows.Forms.Padding(5, 60, 5, 5);
+            this.ShadowType = MetroFramework.Forms.MetroFormShadowType.DropShadow;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.Text = "AVN User Migration";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Main_FormClosing);
