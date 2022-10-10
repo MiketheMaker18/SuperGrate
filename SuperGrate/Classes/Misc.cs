@@ -194,7 +194,7 @@ namespace SuperGrate
                     UserRows rows = new UserRows();
                     Logger.Information("Getting list of users on: " + Host + "...");
                     int count = 0;
-                    ManagementObjectCollection manObjCol = await WMI.Query("SELECT SID, LocalPath FROM Win32_UserProfile", Host);
+                    ManagementObjectCollection manObjCol = await WMI.Query("SELECT SID, LocalPath FROM Win32_UserProfile WHERE LocalPath IS NOT NULL", Host);
                     foreach (ManagementObject mo in manObjCol)
                     {
                         if (Main.Canceled) break;
