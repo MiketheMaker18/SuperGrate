@@ -149,7 +149,7 @@ namespace SuperGrate
                     }
                     if (row.ContainsKey(ULColumnType.LastModified))
                     {
-                        row[ULColumnType.LastModified] = File.GetLastWriteTime(Path.Combine(profilePath, "NTUSER.DAT")).ToFileTime().ToString();
+                        row[ULColumnType.LastModified] = File.GetLastWriteTime(profilePath).ToFileTime().ToString();
                     }
                 }
                 return row;
